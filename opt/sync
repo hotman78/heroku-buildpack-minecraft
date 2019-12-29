@@ -4,4 +4,5 @@ if [ -d world ]; then
 else
   rm -rf world
   bash bin/upload.sh download world .
+  chmod +rw /bin/world
 fi
