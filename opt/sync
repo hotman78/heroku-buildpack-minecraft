@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-if [ -d world ]; then
-  bash ../opt/upload.sh upload ./world/* world
-else
-  rm -rf world
-  bash ../opt/upload.sh download world .
-fi
+# if [ -d world ]; then
+#   bash ../opt/upload.sh upload ./world/* world
+# else
+#   rm -rf world
+#   bash ../opt/upload.sh download world .
+# fi
