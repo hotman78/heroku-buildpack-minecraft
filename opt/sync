@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-BUILD_DIR=$1
 if [ -d world ]; then
-  bash $BUILD_DIR/upload.sh upload ./world/* world
+  bash ./upload.sh upload ./world/* world
 else
   rm -rf world
-  bash $BUILD_DIR/upload.sh download world .
+  bash ./upload.sh download world .
 fi
