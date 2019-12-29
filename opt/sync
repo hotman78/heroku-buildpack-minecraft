@@ -3,8 +3,6 @@
 if [ -d world ]; then
   . ./upload.sh upload ./world/* world
 else
-  mkdir -p world
-  cd world
-  . ./upload.sh download world world
-  cd ..
+  rm -rf world
+  . ./upload.sh download world/* *
 fi
