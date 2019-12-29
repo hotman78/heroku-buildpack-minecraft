@@ -2,7 +2,10 @@
 if [ -d world ]; then
   bash bin/upload.sh upload ./world/* world
 else
-  rm -rf world
-  bash bin/upload.sh download world .
-  chmod +rw /bin/world
+  export idx=$($idx+1)
+  if [$(($idx%10)) -eq 0]; then
+    rm -rf world
+    bash bin/upload.sh download world .
+    chmod +rw /bin/world
+  fi
 fi
