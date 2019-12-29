@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 if [ -d world ]; then
   export idx=$( $idx + 1 )
-  if [ $( $idx % 10 ) -eq 0 ]; then
+  if [ $( $idx % 1 ) -eq 0 ]; then
     bash bin/upload.sh upload ./world/* world
   fi
 else
