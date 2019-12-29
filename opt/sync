@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 if [ -d world ]; then
-  bash ./upload.sh upload ./world/* world
+  bash upload.sh upload ./world/* world
 else
   rm -rf world
-  bash ./upload.sh download world .
+  bash upload.sh download world .
 fi
